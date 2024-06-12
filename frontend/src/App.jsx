@@ -1,14 +1,27 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingScreen from './pages/LandingScreen';
+import WhyEmergiQuickScreen from './pages/WhyEmergiQuickScreen';
+import ContactScreen from './pages/ContactScreen';
+import LoginScreen from './pages/LoginScreen';
+import DashboardScreen from './pages/DashboardScreen';
+import SignupScreen from './pages/SignupScreen';
 
 function App() {
-
   return (
-    <div>
-      <h1>EmergiQuick</h1>
-
-    </div>
-  )
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandingScreen />} />
+          <Route path="/why" element={<WhyEmergiQuickScreen />} />
+          <Route path="/contact" element={<ContactScreen />} />
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/signup" element={<SignupScreen />} />
+          <Route path="/dashboard" element={<DashboardScreen />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
