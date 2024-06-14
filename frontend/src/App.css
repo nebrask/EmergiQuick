@@ -1,3 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
 .landing-page {
   font-family: 'Arial', sans-serif;
 }
@@ -30,7 +38,7 @@
   color: #3db9a9;
 }
 
-.nav .btn-signup, .btn-start {
+.nav .btn-signup, .btn-primary {
   color: white !important;
   padding: 10px 20px;
   border-radius: 20px;
@@ -40,9 +48,10 @@
   transition: background-color 0.2s, box-shadow 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: inline-block;
+  font-size: 16px;
 }
 
-.btn:hover, .btn-signup:hover, .btn-start:hover {
+.btn:hover, .btn-signup:hover, .btn-primary:hover {
   background-color: #3db9a9;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
@@ -51,4 +60,79 @@
   text-align: center;
   padding: 50px;
   background-color: #f4f4f4;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  background: linear-gradient(270deg, #3db9a9, #3d789a, #3db9a9);
+  background-size: 600% 600%;
+  animation: fadeIn 15s ease infinite;
+}
+
+.login-container {
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  width: 325px;
+}
+
+.login-title {
+  text-align: center;
+  color: #006d77;
+  font-size: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-field {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+}
+
+.login-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.helper-link {
+  color: #006d77;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.helper-link:hover {
+  color: #3db9a9;
+  text-decoration: underline;
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto 20px;
+  height: 60px;
 }
