@@ -4,7 +4,7 @@ import LandingScreen from './pages/LandingScreen';
 import WhyEmergiQuickScreen from './pages/WhyEmergiQuickScreen';
 import ContactScreen from './pages/ContactScreen';
 import LoginScreen from './pages/LoginScreen';
-import SignupScreen from './pages/SignupScreen';
+import SignUpScreen from './pages/SignUpScreen';
 import PasswordScreen from './pages/PasswordScreen';
 import DashboardScreen from './pages/DashboardScreen';
 
@@ -17,7 +17,7 @@ function App() {
           <Route path="/why" element={<WhyEmergiQuickScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/login" element={<LoginScreen />} />
-          <Route path="/signup" element={<SignupScreen />} />
+          <Route path="/signup" element={<SignUpScreen />} />
           <Route path="/password" element={<PasswordScreen />} />
           <Route path="/dashboard" element={<DashboardScreen />} />
         </Routes>

@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden; /* Prevents scrollbars */
+  overflow: hidden;
 }
 
 .landing-page {
@@ -74,7 +74,7 @@ html, body {
   }
 }
 
-.login-page {
+.login-page, .signup-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@ html, body {
   animation: fadeIn 15s ease infinite;
 }
 
-.login-container {
+.login-container, .signup-container{
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -93,13 +93,13 @@ html, body {
   width: 325px;
 }
 
-.login-title {
+.login-title, .signup-title {
   text-align: center;
   color: #006d77;
   font-size: 30px;
 }
 
-.login-form {
+.login-form, .signup-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -112,7 +112,7 @@ html, body {
   font-size: 14px;
 }
 
-.login-links {
+.login-links, .signup-links {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,7 +131,7 @@ html, body {
   text-decoration: underline;
 }
 
-.login-logo {
+.login-logo, .signup-logo {
   display: block;
   margin: 0 auto 20px;
   height: 60px;
