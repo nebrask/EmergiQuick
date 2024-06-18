@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import '../styles/landing.css';
 import logo from '../assets/logo.png';
 
 const LandingScreen = () => {
     return (
       <div className="landing-page">
         <header className="landing-header">
-          <div className="logo">
+          <div className="landing-logo">
             <Link to="/">
-                <img src={logo} alt="EmergiQuick Logo" className="logo-img" />
+                <img src={logo} alt="EmergiQuick Logo"/>
             </Link>
           </div>
           <nav className="nav">
@@ -18,7 +18,7 @@ const LandingScreen = () => {
             <Link to="/contact">Contact</Link>
             */}
             <Link to="/login">Login</Link>
-            <Link to="/signup" className="btn-signup">Sign Up</Link>
+            <Link to="/signup" className="btn-primary">Sign Up</Link>
           </nav>
         </header>
         <section className="hero">
